@@ -1,0 +1,49 @@
+/* Responsive Styles for Screens Below 768px (Tablets and below) */
+@media (max-width: 768px) {
+    .block-gauche {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .block-droite {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .profil {
+        width: 80%;
+        height: auto;
+        margin: 10% auto;
+        border-radius: 50%;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio img, .babo img {
+        width: 80%;
+    }
+
+    .compétences, .contact {
+        padding: 20px;
+    }
+
+    .message input, .message button {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+}

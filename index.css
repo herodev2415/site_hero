@@ -27,35 +27,35 @@
 .progress.p85 { width: 85%; }
 .progress.p80 { width: 80%; }
 
-body{
+body {
     display: flex;
     margin: 0;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 .block-gauche {
     width: 30%;
-    height: 100vh; /* Hauteur de tout l'écran */
-    position: fixed; /* Fixé sur l'écran */
+    height: 100vh;
+    position: fixed;
     top: 0;
     left: 0;
     background-image: url(./couchersoleil.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
 }
 .profil {
-    background-color:rgba(x, green, blue, alpha);
     margin-top: 20%;
-    width: 100%; /* Remplit toute la largeur du bloc */
-    height: 75%; /* Remplit toute la hauteur du bloc */
-    object-fit: cover; /* Garde le ratio et coupe si nécessaire */
-    border-radius: 505px; 
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 505px;
 }
-.block-droite{
-    height: 100%;
-    width: 100%; /* Ajuste en fonction de .block_gauche */
-    margin-left: 30%; 
-    box-sizing: border-box; /* Empêche le padding d'agrandir la div */
-    background-color: #dfe4e7;  
+.block-droite {
+    margin-left: 30%;
+    box-sizing: border-box;
+    background-color: #dfe4e7;
+    transition: all 0.3s ease-in-out;
 }
 .droite-haut{
     padding: 20px;
@@ -72,27 +72,16 @@ body{
     right: 10px;
     position: absolute;
 }
- header{
+header {
     width: 80%;
     position: relative;
-    left:10%;
+    left: 10%;
     text-align: center;
-    justify-content: center;
     background-color: #0d4c6b;
-    /* background-image: url(./arcenciel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  */
     border-radius: 10px 30px 0px 10px;
-    height: 27%;
-    box-shadow: 2px 2px 5px 3px;
-} 
-header h1{
-    color: white;
-    font-family: Times New Roman, Georgia, Garamond, Cambria, Bell MT;
-    font-size: 260%;
+    height: 4%;
 }
-header h3{
-    font-size: 25px;
+header h1, header h3 {
     color: white;
 }
 .download a{
@@ -114,12 +103,11 @@ header h3{
     background-color: #d1cfcf;
     text-align: center;
 } 
-.portfolio{
+.portfolio {
     display: flex;
-    flex-direction: row;
     gap: 70px;
 }
-.portfolio a{
+.portfolio a {
     text-decoration: none;
 }
 .block-droite h2{
@@ -131,11 +119,12 @@ header h3{
 .tsintsa img{
     width:90%;
 }
-.babo{
+.babo {
     display: flex;
     flex-direction: column;
 }
-.babo img{
+
+.babo img {
     width: 43%;
 }
 .propos h2{
@@ -153,9 +142,10 @@ hr{
 }
 .propos p{
     color: rgb(78, 76, 76);
-    font-size: 25px;
+    /* font-size: 20px; */
     font-weight: 50;
-    font-size: 18px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .compétences h2{
     color: rgb(204, 145, 35);
@@ -228,12 +218,11 @@ button {
     cursor: pointer;
     width: 250px;
 }
-footer{
+footer {
     width: 100%;
-    margin: 80px 0 0 0;
+    margin-top: 80px;
     background-color: #ccc;
-    height: 200px; 
-    text-align: center;   
+    text-align: center;
 }
 footer img{
     padding-top: 65px;
@@ -419,7 +408,6 @@ footer p{
         width: 100%; /* Ajuster la largeur de la photo */
         margin-bottom: 20px; /* Espacement entre la photo et le portfolio */
     }
-
     .portfolio {
         order: 2; /* Le portfolio passe après la photo de profil */
         width: 100%; /* Occupe toute la largeur de l'écran */
