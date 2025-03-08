@@ -1,0 +1,441 @@
+.skill {
+    margin-bottom: 20px;
+}
+.skill-name {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #422d10;
+}
+.progress-bar {
+    width: 100%;
+    height: 32px;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color: #555;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    left: 0;
+}
+/* Pourcentage spécifique */
+.progress.p95 { width: 95%; }
+.progress.p85 { width: 85%; }
+.progress.p80 { width: 80%; }
+
+body{
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+.block-gauche {
+    width: 30%;
+    height: 100vh; /* Hauteur de tout l'écran */
+    position: fixed; /* Fixé sur l'écran */
+    top: 0;
+    left: 0;
+    background-image: url(./couchersoleil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.profil {
+    background-color:rgba(x, green, blue, alpha);
+    margin-top: 20%;
+    width: 100%; /* Remplit toute la largeur du bloc */
+    height: 75%; /* Remplit toute la hauteur du bloc */
+    object-fit: cover; /* Garde le ratio et coupe si nécessaire */
+    border-radius: 505px; 
+}
+.block-droite{
+    height: 100%;
+    width: 100%; /* Ajuste en fonction de .block_gauche */
+    margin-left: 30%; 
+    box-sizing: border-box; /* Empêche le padding d'agrandir la div */
+    background-color: #dfe4e7;  
+}
+.droite-haut{
+    padding: 20px;
+}
+#menu{
+    text-align: center;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0; 
+}
+.menu1{
+    top: 20px;
+    right: 10px;
+    position: absolute;
+}
+ header{
+    width: 80%;
+    position: relative;
+    left:10%;
+    text-align: center;
+    justify-content: center;
+    background-color: #0d4c6b;
+    /* background-image: url(./arcenciel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  */
+    border-radius: 10px 30px 0px 10px;
+    height: 27%;
+    box-shadow: 2px 2px 5px 3px;
+} 
+header h1{
+    color: white;
+    font-family: Times New Roman, Georgia, Garamond, Cambria, Bell MT;
+    font-size: 260%;
+}
+header h3{
+    font-size: 25px;
+    color: white;
+}
+.download a{
+    color:  rgb(119, 118, 118);
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+.download{
+     width: 28%;
+    height: 20%; 
+    width: fit-content; /* Adapte la largeur au contenu */
+    margin: auto;
+    text-align: center;    
+}
+ .download1{
+    width: 25%;
+    height: 50px;
+    background-color: #d1cfcf;
+    text-align: center;
+} 
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+.portfolio a{
+    text-decoration: none;
+}
+.block-droite h2{
+    color: rgb(204, 145, 35);
+    font-size: 25px;
+    font-weight: 50;
+    font-size: 40px;
+}
+.tsintsa img{
+    width:90%;
+}
+.babo{
+    display: flex;
+    flex-direction: column;
+}
+.babo img{
+    width: 43%;
+}
+.propos h2{
+    color: rgb(204, 145, 35);
+    font-size: 25px;
+    font-weight: 50;
+    font-size: 40px;
+}
+.propos a{
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+    color: #f5f5f5;
+}
+.propos p{
+    color: rgb(78, 76, 76);
+    font-size: 25px;
+    font-weight: 50;
+    font-size: 18px;
+}
+.compétences h2{
+    color: rgb(204, 145, 35);
+    font-size: 25px;
+    font-weight: 50;
+    font-size: 40px;
+}
+.compétences a{
+    color: #555;
+    text-decoration: none;
+    font-size: 25px;
+}
+.contact h2{
+    color: rgb(204, 145, 35);
+    font-size: 25px;
+    font-weight: 50;
+    font-size: 40px;
+}
+.contact .elt{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    line-height: 3;
+}
+ .contact a{
+    color: #4d463d;
+    text-decoration: none;
+    font-size: 20px;
+}
+.tana{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 3px;    
+}
+.message {
+    display: flex;
+    flex-direction:column;
+}
+input {
+    border-radius: 0 10px 0 10px;
+    padding-left: 10px;
+    line-height: 4;
+    margin-bottom: 15px; /* Espace de 15px entre chaque input */
+}
+input::placeholder {
+    font-size: 17px; /* Agrandir la taille du texte du placeholder */
+    color: #bfaa8f;
+    cursor: pointer;
+  }
+  .message p{
+    color: #524a3f;
+    font-size: 20px;
+  }
+  #envoyer{
+    width:270px;
+    text-align: center;
+    background: url('fusée.PNG') no-repeat left 23px center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+  }
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    color: grey;
+    cursor: pointer;
+    width: 250px;
+}
+footer{
+    width: 100%;
+    margin: 80px 0 0 0;
+    background-color: #ccc;
+    height: 200px; 
+    text-align: center;   
+}
+footer img{
+    padding-top: 65px;
+    gap: 100px;
+}
+footer a{
+    color: #555;
+}
+footer p{
+    color: #555;
+    font-size: 18px;
+}
+
+
+
+
+/* Cache le checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Conteneur principal */
+#menu {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    display: inline-block;
+}
+
+/* Style du bouton menu */
+.menu-icon {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu1 {
+    width: 40px;
+}
+
+/* Menu caché par défaut */
+/* Cache le menu par défaut */
+#menu-links {
+    display: none;
+    position: absolute;
+    top: 70px; /* Positionne le menu juste en dessous de l'image */
+    left: 10px;
+    transform: translateX(-50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 110px;
+    padding: 10px;
+}
+
+/* Lorsque le checkbox est coché, affiche le menu */
+#menu-toggle:checked + .menu-icon + #menu-links {
+    display: block;
+}
+
+/* Ajout d'un effet pour le lien (optionnel) */
+#menu-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s;
+}
+
+#menu-links a:hover {
+    background: #f0f0f0;
+}
+
+
+
+
+
+/* @media (max-width: 768px) {
+    .block-gauche {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .block-droite {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .profil {
+        margin-top: 10%;
+        width: 60%;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio, .babo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio img, .babo img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .compétences, .contact {
+        padding: 10px;
+    }
+
+    .message input, .message button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+} */
+
+/* Ecrans plus petits comme les téléphones */
+/* @media (max-width: 480px) {
+    .block-gauche {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .profil {
+        margin-top: 10%;
+        width: 70%;
+        height: auto;
+    }
+
+    .block-droite {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio, .babo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio img, .babo img {
+        width: 100%;
+    }
+
+    .compétences, .contact {
+        padding: 10px;
+    }
+
+    .message input, .message button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+} */
+ /* Media query pour les écrans plus petits (moins de 768px de large) */
+@media (max-width: 768px) {
+    /* Pour les petits écrans, mettre le bloc de droite (avec la photo de profil) au-dessus du portfolio */
+    .block-droite {
+        width: 100%; /* Le bloc droit prend toute la largeur */
+        display: flex;
+        flex-direction: column; /* Empiler les éléments verticalement */
+    }
+
+    .profil {
+        order: 1; /* Placer la photo de profil au-dessus du portfolio */
+        width: 100%; /* Ajuster la largeur de la photo */
+        margin-bottom: 20px; /* Espacement entre la photo et le portfolio */
+    }
+
+    .portfolio {
+        order: 2; /* Le portfolio passe après la photo de profil */
+        width: 100%; /* Occupe toute la largeur de l'écran */
+    }
+
+    /* Optionnel : Ajuster la taille de la photo de profil pour qu'elle s'adapte à l'écran */
+    .profil img {
+        width: 80%; /* Réduire la taille de l'image */
+        height: auto;
+        border-radius: 50%; /* Garder la forme ronde */
+        margin: 0 auto; /* Centrer l'image */
+        display: block;
+    }
+}
+
+
+
+
+
