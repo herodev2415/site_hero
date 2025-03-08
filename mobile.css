@@ -1,15 +1,16 @@
 /* Responsive Styles for Mobile Screens (Less than 480px) */
 @media (max-width: 480px) {
     .block-gauche {
-        width: auto;
-        position: relative;
+        width: 80%;  /* Le bloc gauche sera plus grand en mobile si tu veux qu'il occupe plus d'espace */
+    }
+    .tsintsa{
+        width: 110px;
     }
 
     .profil {
-        width: 70%;
-        margin: 20% auto;
+        width: 50%;  /* Réduit encore plus l'image sur mobile */
+        margin: 10% auto; /* Ajuste la marge pour un meilleur espacement */
     }
-
     .block-droite {
         margin-left: 0;
         width: 100%;
@@ -41,6 +42,7 @@
         font-size: 12px;
     }
 }
+
 
 /* Menu Mobile Responsiveness */
 #menu-toggle:checked + .menu-icon + #menu-links {
