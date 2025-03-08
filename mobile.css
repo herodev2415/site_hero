@@ -1,8 +1,7 @@
 /* Responsive Styles for Mobile Screens (Less than 480px) */
 @media (max-width: 480px) {
     .block-gauche {
-        width: 100%;
-        height: auto;
+        width: auto;
         position: relative;
     }
 
